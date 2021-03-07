@@ -7,6 +7,45 @@ import android.util.Log
 /*
  * Just putting logs in different call back methods.
  */
+
+//Starting the mobile.
+/**
+ * On starting
+ * onCreate()
+ * onStart()
+ * onResume()
+ */
+
+//Rotating the mobile.
+/**
+ * onPause()
+ * onStop()
+ * onDestroy()
+ * onCreate()
+ * onStart()
+ * onResume()
+ */
+//Minimized app..
+/**
+ * onPause()
+ * onStop()
+ * onRestart()
+ * onStart()
+ * onResume()
+ */
+//Call arrives..
+/*onPause()
+onStop()
+on cutting the call...
+onRestart()
+onStart()
+onResume()
+ */
+
+
+
+
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +65,13 @@ class MainActivity : AppCompatActivity() {
         super.onPause()
 
         Log.d("LifeCycleCallBack","onPause()")
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        Log.d("LifeCycleCallBack","onResume()")
 
     }
 
